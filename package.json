@@ -1,0 +1,22 @@
+{
+  "name": "health-chatbot",
+  "version": "1.0.0",
+  "description": "The goal is to provide people a quick and easy way to have health related questions answered, as well as to offer other developers the means to incorporate Health Chatbot into their projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcus-mcmullenjr/Health-ChatBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcus-mcmullenjr/Health-ChatBot/issues"
+  },
+  "homepage": "https://github.com/marcus-mcmullenjr/Health-ChatBot#readme",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
