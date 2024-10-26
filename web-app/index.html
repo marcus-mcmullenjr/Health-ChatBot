@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <title>HAI Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div id="chatbot-container">
+        <div id="chatbot-header">
+            <span>Chatbot</span>
+            <div class="button-container">
+                <button class="color-scheme-button" onclick="changeColorScheme()"></button>
+            </div>
+        </div>
+        <div id="chatbot-messages"></div>
+        <div id="user-input">
+            <input type="text" id="message-input" placeholder="Type your message...">
+            <button onclick="sendMessage()">➤</button>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+    
+</body>
+
+</html>

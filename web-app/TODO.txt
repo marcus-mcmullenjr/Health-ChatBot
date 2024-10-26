@@ -1,0 +1,52 @@
+1. Make a switch shape and then align the switch with the chatbot
+
+1. Grab UPC code from {cam image, 'file upload button', Full text search}
+    Error handle 
+        1. Make sure user uploads image OR proper string for full text search
+        2. 
+
+2. I
+
+2b. IF string, pass string to openfood db
+    Error handling
+        1. Check to make sure user enters string
+        2. Check to make sure user selects ONE entry OR next page button
+
+    1. Hits openfood db API with full text search and returns top ten results {name, upc code, image}
+    2. User selects whick product is the correct one
+    3. If product is not found, return next ten results and repeat
+    4. Once product is found, send UPC code to openfood db
+
+3. Hit openfood database API for food breakdown using UPC code
+    Error handle:
+        1. make sure response is 200 and contents are returned properly
+        2. Handle errors from package neatly
+    1. Grab: "code": "3017620422003", // Replace with the actual UPC code
+            "product_name": null,
+            "generic_name": null,
+            "brands": null,
+            "categories": null,
+            "ingredients": null,
+            "nutriments": null,
+            "image_front_url": null,
+            "image_nutrition_url": null,
+            "ecoscore_grade": null,
+            "ecoscore_score": null,
+            "nutriscore_grade": null,
+            "nutriscore_score": null,
+            "nutrient_levels": null,
+            "states": null 
+        
+
+4. Store returned info in db
+    Error handle:
+        1. Confirm db is loaded 
+        2. Confirm data table exist
+        3. Check whether product exist in db, if not, store
+        4. Handle errors from package neatly
+    
+Long term goals 
+    1. Authoriation/login handle and logic
+    2. Mobile app
+    3. Security
+    4. Reciepe and diet dbs 
